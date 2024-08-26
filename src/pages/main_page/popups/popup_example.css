@@ -1,0 +1,102 @@
+/* Keyframes for Animations */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Smaller scale at start */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Full scale at end */
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 1;
+        transform: scale(1); /* Full scale at start */
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8); /* Smaller scale at end */
+    }
+}
+
+/* Popup Container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 0.3s ease; /* Match the animation duration */
+}
+
+/* Popup Inner Container */
+.popup_inner {
+    background-color: #FFFFFF; /* var(--color-white) */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    position: relative; /* Added to position the close button */
+    animation: zoomIn 0.3s ease ; /* Animation for showing the popup */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup Inner on Hide */
+.popup.hide .popup_inner {
+    animation: zoomOut 0.3s ease ; /* Animation for hiding the popup */
+}
+
+/* Close Button */
+.popup_inner .close-btn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #22356F; /* var(--color-dark-blue) */
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Heading and Paragraph Styles */
+.popup_inner h2 {
+    color: #22356F; /* var(--color-dark-blue) */
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    font-family: "Larsseit Medium";
+}
+
+.popup_inner p {
+    color: #22356F; /* Darker grey color for better readability */
+    margin: 0;
+    font-size: 1em;
+    font-family: "Larsseit Light";
+    padding: 0 40px;
+}
+
+/* Button Styles */
+.popup_inner button {
+    background-color: #22356F; /* var(--color-dark-blue) */
+    color: #FFFFFF; /* var(--color-white) */
+    border: 1px solid #22356F; /* var(--color-dark-blue) */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Larsseit Medium";
+    margin-top: 15px;
+}
+
+.popup_inner button:last-child:hover {
+    background-color: #62D0DF; /* var(--color-light-blue) */
+    border-color: #62D0DF; /* var(--color-light-blue) */
+}

@@ -1,0 +1,61 @@
+
+.helping_cart {
+    width: 360px;
+    height: 360px;
+    padding-top: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.helping_cart_title {
+    border-top: solid 1px white;
+    padding-top: 28px;
+    width: 255px;
+
+    display: flex;
+    position: relative;
+}
+
+.helping .container {
+    width: 1445px;
+    padding: 0;
+}
+
+.helping_title {
+    font-family: "Larsseit Light";
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0.06em;
+    text-align: center;
+color: #22356F80;
+    margin-bottom: 25px;
+}
+
+.helping_cart_title p {
+    font-family: 'Larsseit Medium';
+    font-size: 32px;
+    line-height: 33.75px;
+    letter-spacing: -0.006em;
+
+    color: white;
+    margin-left: 25px;
+}
+
+.helping_cart_title span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #E9B730;
+    margin-right: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 14%;
+    left: 0;
+}
+
+.helping_carts_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+

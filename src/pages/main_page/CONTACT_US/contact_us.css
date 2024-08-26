@@ -1,0 +1,71 @@
+.contact_us {
+    background: #22356F;
+}.contact_us_flex {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     align-items: center;
+ }
+
+.contact_us .container{
+    position: relative;
+}
+
+.contact_us_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact_us_text {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 580px;
+}
+
+.contact_us_text_title {
+    margin: 100px 0 235px 0;
+
+    font-family: "Larsseit Light";
+    font-size: 16px;
+    line-height: 12.19px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    color: #22356F;
+
+}
+
+.contact_us_text_decryption {
+    font-family: "Larsseit Medium";
+    font-size: 36px;
+    line-height: 52.73px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+    color: #22356F;
+}
+
+.contact_us_text_decryption strong {
+    color: #62D0DF;
+}
+
+
+.contact_us_text_button {
+    margin: 165px 0 55px 0;
+
+    font-family: "Larsseit Medium";
+    font-size: 16px;
+    line-height: 23.44px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FAB63E;
+    cursor: pointer;
+
+    transition: color ease 0.3s;
+}
+
+.contact_us_text_button:hover {
+    color: #22356F;
+}
